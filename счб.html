@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>isprf</title>
+</head>
+<body>
+<script>
+function isHappy(ticket) {
+const ticketArray = ticket.split('');
+const length = ticketArray.length - 1;
+let leftResult = 0;
+let rightResult = 0;
+for (let i = 0; i <= length; i++) {
+if (i <= length / 2) {
+leftResult += parseInt(ticketArray[i]);
+} else {
+rightResult += parseInt(ticketArray[i]);
+}
+}
+return leftResult === rightResult
+</script>
+</body>
+</html>
